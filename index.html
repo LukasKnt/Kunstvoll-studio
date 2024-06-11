@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -29,10 +30,12 @@
 <div class="container" id="gallery">
     <section class="gallery">
         <h2>Gallery</h2>
-        <img src="art1.jpg" alt="Art 1">
-        <img src="art2.jpg" alt="Art 2">
-        <img src="art3.jpg" alt="Art 3">
-        <img src="art4.jpg" alt="Art 4">
+        <div class="gallery-grid">
+            <img src="art1.jpg" alt="Art 1">
+            <img src="art2.jpg" alt="Art 2">
+            <img src="art3.jpg" alt="Art 3">
+            <img src="art4.jpg" alt="Art 4">
+        </div>
     </section>
 </div>
 
@@ -51,6 +54,22 @@
 <footer>
     <p>&copy; 2024 My Art Website. All rights reserved.</p>
 </footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const images = document.querySelectorAll('.gallery-grid img');
+        images.forEach(img => {
+            img.addEventListener('mouseover', () => {
+                img.style.transform = 'scale(1.1)';
+                img.style.transition = 'transform 0.3s';
+            });
+            img.addEventListener('mouseout', () => {
+                img.style.transform = 'scale(1)';
+                img.style.transition = 'transform 0.3s';
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
