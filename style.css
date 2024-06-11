@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    background: linear-gradient(90deg, #1e725a, #2a5298);
     color: white;
     padding: 7px 0;
     text-align: center;
@@ -156,7 +156,7 @@ nav a:hover {
 }
 
 .contact-form button {
-    background-color: #1e3c72;
+    background-color: #451e72ac;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -171,7 +171,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: #2a5298;
+    background-color: #52982a;
     color: white;
     text-align: center;
     padding: 5px 0;
