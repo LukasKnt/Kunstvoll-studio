@@ -17,7 +17,7 @@ header {
 }
 */
 header {
-    background: url('https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?h=1000&w=1500&fit=crop&mark=https:%2F%2Fassets.imgix.net%2F~text%3Ftxtclr%3Dfff%26txt%3DFree+Free+No+Copyright+Photos%26txtsize%3D120%26txtpad%3D20%26bg%3D80000000%26txtfont%3DAvenir-Heavy%26txtalign%3Dcenter%26w%3D1300&markalign=center%2Cmiddle&txt=pexels.com&txtalign=center&txtsize=60&txtclr=eeffffff&txtfont=Avenir-Heavy&txtshad=10') no-repeat center center/cover; 
+    background: url('https://raw.githubusercontent.com/LukasKnt/Kunstvoll-studio/main/Ueberschrifthintergrund.jpg') no-repeat center center/cover; 
     color: #fff;
     padding: 50px 0;
     text-align: center;
