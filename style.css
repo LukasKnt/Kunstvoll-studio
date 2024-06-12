@@ -35,6 +35,11 @@ nav a:hover {
     background-color: #1e3c72;
 }
 
+.about-section p {
+    line-height: 1.8; /* Ändere den Zeilenabstand nach Bedarf */
+    margin-bottom: 20px; /* Optional: Abstand zwischen den Absätzen */
+}
+
 .container {
     padding: 40px 20px;
 }
