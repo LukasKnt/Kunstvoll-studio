@@ -135,7 +135,7 @@ nav a:hover {
     position: absolute;
     top: 10px;
     right: 25px;
-    color: rgba(255, 0, 0, 0.491); /* Farbe für das Schließen-Symbol */
+    color: rgba(255, 0, 0, 0.581); /* Farbe für das Schließen-Symbol */
     font-size: 35px;
     font-weight: bold;
     transition: 0.3s;
@@ -159,7 +159,7 @@ nav a:hover {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(67, 65, 199, 0.558);
+    box-shadow: 0 8px 16px rgba(101, 101, 101, 0.589);
 }
 
 .gallery-grid {
@@ -175,13 +175,13 @@ nav a:hover {
 .gallery img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.189);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.529);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .gallery img:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.504);
+    box-shadow: 0 8px 16px rgba(73, 73, 73, 0.404);
 }
 /*
 .overlay {
