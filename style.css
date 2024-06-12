@@ -169,7 +169,7 @@ nav a:hover {
 }
 
 
-/*
+
 .gallery img {
     width: 100%;
     border-radius: 10px;
@@ -181,7 +181,7 @@ nav a:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-*/
+
 .gallery-item {
     position: relative;
     overflow: hidden;
