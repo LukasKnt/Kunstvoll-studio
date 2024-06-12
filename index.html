@@ -41,7 +41,7 @@
         <div class="gallery-grid">
             <div class="gallery-item">
                 <img src="art1.jpg" alt="Art 1" onclick="showImage(this)">
-                <div class="overlay">
+                <div class="overlay" onmouseover="showOverlay(this)" onmouseout="hideOverlay(this)">
                     <div class="text">Art 1 - love Face</div>
                 </div>
             </div>
@@ -83,6 +83,16 @@
         var modal = document.getElementById("myModal");
         modal.style.display = "none";
     }
+
+    function showOverlay(overlayElement) {
+        overlayElement.style.opacity = 1;
+        overlayElement.style.transition = 'opacity 0.3s';
+    }
+
+    function hideOverlay(overlayElement) {
+        overlayElement.style.opacity = 0;
+        overlayElement.style.transition = 'opacity 0.3s';
+    }
 /*
     document.addEventListener("DOMContentLoaded", function() {
 
@@ -120,7 +130,7 @@
             });
         });
     });
-    */
+*/
 </script>
 
 
