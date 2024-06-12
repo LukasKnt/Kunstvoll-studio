@@ -16,6 +16,15 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.gradient-text {
+    font-size: 48px;
+    font-weight: bold;
+    background: url('Ueberschrifthintergrund.jpg') repeat;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
 nav {
     display: flex;
     justify-content: center;
