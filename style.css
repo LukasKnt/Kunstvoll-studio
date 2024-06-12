@@ -27,6 +27,11 @@ header h1 {
     background-color: rgba(0, 0, 0, 0.5); /* Hintergrundfarbe der Überschrift mit Transparenz */
     padding: 10px; /* Abstand um die Überschrift */
 }
+
+.hero h2 {
+    line-height: 1.2; /* Ändere den Zeilenabstand nach Bedarf */
+}
+
 /*
 .gradient-text {
     font-size: 48px;
