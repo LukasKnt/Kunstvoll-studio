@@ -154,7 +154,7 @@ nav a:hover {
 }
 
 
-/*
+
 .gallery {
     background: white;
     padding: 20px;
@@ -167,7 +167,7 @@ nav a:hover {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
-
+/*
 .gallery-item {
     position: relative;
 }
