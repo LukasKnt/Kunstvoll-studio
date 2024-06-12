@@ -29,7 +29,7 @@ header h1 {
 }
 
 .hero p {
-    line-height: 5.6; /* Ändere den Zeilenabstand nach Bedarf */
+    line-height: 1.8; /* Ändere den Zeilenabstand nach Bedarf */
     overflow-wrap: break-word; /* Berücksichtigt den Zeilenumbruch am Ende des Fensters */
 }
 
