@@ -117,7 +117,7 @@ nav a:hover {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.9); /* Transparente Hintergrundfarbe */
 }
 
 .modal-content {
@@ -125,13 +125,17 @@ nav a:hover {
     display: block;
     width: 80%;
     max-width: 700px;
+    background-color: white; /* Weißer Hintergrund für das Bild */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Schatten für das Popup */
 }
 
 .close {
     position: absolute;
     top: 10px;
     right: 25px;
-    color: white;
+    color: black; /* Farbe für das Schließen-Symbol */
     font-size: 35px;
     font-weight: bold;
     transition: 0.3s;
@@ -143,6 +147,12 @@ nav a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
+.modal img {
+    width: 100%;
+    height: auto;
+}
+
 
 
 .gallery {
