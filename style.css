@@ -159,7 +159,7 @@ nav a:hover {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(255, 0, 136, 0.902);
 }
 
 .gallery-grid {
@@ -175,13 +175,13 @@ nav a:hover {
 .gallery img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(1, 9, 240, 0.939);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .gallery img:hover {
     transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(3, 248, 23, 0.2);
 }
 
 .overlay {
