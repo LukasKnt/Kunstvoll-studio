@@ -81,7 +81,7 @@ nav a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
-
+/*
 .slider {
     position: relative;
     width: 100%;
@@ -104,6 +104,30 @@ nav a:hover {
 .slide img {
     width: 100%;
     border-radius: 10px;
+}
+*/
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Set the desired height for the hero section */
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 500px; /* Same as the .slider height */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the whole area without distorting */
 }
 
 /* CSS für das modale Popup */
