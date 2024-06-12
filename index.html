@@ -40,12 +40,43 @@
         <h2>Gallery</h2>
         <div class="gallery-grid">
             <div class="gallery-item">
-                <img src="art1.jpg" alt="Art 1" onclick="showImage(this)">
+                <img src="art1.jpg" alt="Art 1">
                 <div class="overlay">
                     <div class="text">Art 1 - love Face</div>
                 </div>
             </div>
+            <div class="gallery-item">
+                <img src="art2.jpg" alt="Art 2">
+                <div class="overlay">
+                    <div class="text">Art 2 - fliegende Haare</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="art3.jpg" alt="Art 3">
+                <div class="overlay">
+                    <div class="text">Art 3 - scream</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="trauer.jpg" alt="trauer.jpg">
+                <div class="overlay">
+                    <div class="text">Trauriges Bild</div>
+                </div>
+            </div>
+			<div class="gallery-item">
+				<img src="farbenspiel.jpg" alt="farbenspiel.jpg">
+				<div class="overlay">
+					<div class="text">300$</div>
+				</div>
+			</div>
+
             <!-- Insert New Content Here -->
+            <div class="gallery-item">
+                <img src="art4.jpg" alt="Art 4">
+                <div class="overlay">
+                    <div class="text">Art 4 - Description</div>
+                </div>
+            </div>
         </div>
     </section>
 </div>
@@ -66,29 +97,8 @@
     <p>&copy; 2024 My Art Website. All rights reserved.</p>
 </footer>
 
-<div id="myModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="img01">
-</div>
-
 <script>
-    function showImage(imgElement) {
-        var modal = document.getElementById("myModal");
-        var modalImg = document.getElementById("img01");
-        modal.style.display = "block";
-        modalImg.src = imgElement.src;
-    }
-
-    function closeModal() {
-        var modal = document.getElementById("myModal");
-        modal.style.display = "none";
-    }
-
-    
-
     document.addEventListener("DOMContentLoaded", function() {
-
-
         // Slider
         const slides = document.querySelectorAll('.slide');
         let currentIndex = 0;
@@ -122,9 +132,7 @@
             });
         });
     });
-
 </script>
-
 
 </body>
 </html>
