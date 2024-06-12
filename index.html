@@ -102,22 +102,22 @@
     <img class="modal-content" id="img01">
 </div>
 
+
 <script>
-    function showImage(imgElement) {
+    document.addEventListener("DOMContentLoaded", function() {
+        function showImage(imgElement) {
         var modal = document.getElementById("myModal");
         var modalImg = document.getElementById("img01");
         modal.style.display = "block";
         modalImg.src = imgElement.src;
-    }
+        }
 
-    function closeModal() {
-        var modal = document.getElementById("myModal");
-        modal.style.display = "none";
-    }
-</script>
+        function closeModal() {
+            var modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
+
         // Slider
         const slides = document.querySelectorAll('.slide');
         let currentIndex = 0;
