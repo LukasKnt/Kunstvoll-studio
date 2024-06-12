@@ -75,9 +75,7 @@
 
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-
-        function showImage(imgElement) {
+    function showImage(imgElement) {
             var modal = document.getElementById("myModal");
             var modalImg = document.getElementById("img01");
             modal.style.display = "block";
@@ -88,6 +86,9 @@
             var modal = document.getElementById("myModal");
             modal.style.display = "none";
         }
+        
+    document.addEventListener("DOMContentLoaded", function() {
+
 
         // Slider
         const slides = document.querySelectorAll('.slide');
