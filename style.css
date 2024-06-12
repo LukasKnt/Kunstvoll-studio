@@ -195,12 +195,12 @@ nav a:hover {
     overflow: hidden;
     border-radius: 0 0 10px 10px;
 }
-
+*/
 .gallery-item:hover .overlay {
     height: 100%;
     opacity: 0.9;
 }
-*/
+
 .text {
     color: white;
     font-size: 20px;
