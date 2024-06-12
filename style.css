@@ -23,6 +23,7 @@ header {
     -webkit-background-clip: text;
     color: transparent;
     background-clip: text;
+    display: inline-block;
 }
 
 nav {
