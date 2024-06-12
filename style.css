@@ -19,7 +19,7 @@ header {
 .gradient-text {
     font-size: 48px;
     font-weight: bold;
-    background: url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGNhbnZhcyUyMGNvbG9yZnVsJTIwYWJzdHJhY3R8fDB8fHx8MTYxMjE0OTczOQ&ixlib=rb-1.2.1&q=80&w=1080') repeat;
+    background: url('https://github.com/LukasKnt/Kunstvoll-studio/blob/main/Ueberschrifthintergrund.jpg') repeat;
     -webkit-background-clip: text;
     color: transparent;
     background-clip: text;
