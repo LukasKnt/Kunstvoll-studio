@@ -159,7 +159,7 @@ nav a:hover {
     position: absolute;
     top: 10px;
     right: 25px;
-    color: rgba(255, 0, 0, 0.581); /* Farbe für das Schließen-Symbol */
+    color: rgba(121, 121, 121, 0.674); /* Farbe für das Schließen-Symbol */
     font-size: 35px;
     font-weight: bold;
     transition: 0.3s;
@@ -167,7 +167,7 @@ nav a:hover {
 
 .close:hover,
 .close:focus {
-    color: #bbb;
+    color: #86868665;
     text-decoration: none;
     cursor: pointer;
 }
