@@ -36,8 +36,8 @@ nav a:hover {
 }
 
 .about-section p {
-    line-height: 5.8; /* Ändere den Zeilenabstand nach Bedarf */
-    margin-bottom: 20px; /* Optional: Abstand zwischen den Absätzen */
+    line-height: 1.8; /* Ändere den Zeilenabstand nach Bedarf */
+    margin-bottom: 50px; /* Optional: Abstand zwischen den Absätzen */
 }
 
 .container {
