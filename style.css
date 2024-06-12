@@ -154,7 +154,7 @@ nav a:hover {
 }
 
 
-
+/*
 .gallery {
     background: white;
     padding: 20px;
@@ -198,9 +198,9 @@ nav a:hover {
 
 .gallery-item:hover .overlay {
     height: 100%;
-    /*opacity: 0.9;*/
+    opacity: 0.9;
 }
-
+*/
 .text {
     color: white;
     font-size: 20px;
