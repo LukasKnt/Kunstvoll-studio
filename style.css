@@ -25,7 +25,7 @@ header {
 
 header h1 {
     background-color: rgba(0, 0, 0, 0.5); /* Hintergrundfarbe der Überschrift mit Transparenz */
-    padding: 10px; /* Abstand um die Überschrift */
+    padding: 5px; /* Abstand um die Überschrift */
 }
 
 .hero p {
@@ -283,7 +283,7 @@ footer {
     background-color: #52982a;
     color: white;
     text-align: center;
-    padding: 5px 0;
+    padding: 3px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
