@@ -4,9 +4,18 @@ body {
     padding: 0;
     background-color: #f0f0f0;
     color: #333;
-    line-height: 1.6;
+    line-height: 0.6;
 }
-
+/*
+header {
+    background: linear-gradient(90deg, #1e725a, #2a5298);
+    color: white;
+    padding: 7px 0;
+    text-align: center;
+    font-size: 2.0em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+*/
 header {
     background: url('https://raw.githubusercontent.com/LukasKnt/Kunstvoll-studio/main/Ueberschrifthintergrund.jpg') no-repeat center center/cover; 
     color: #fff;
@@ -15,10 +24,36 @@ header {
 }
 
 header h1 {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Hintergrundfarbe der Überschrift mit Transparenz */
+    padding: 10px; /* Abstand um die Überschrift */
 }
 
+header h_name {
+    background-color: rgba(0, 0, 0, 0); /* Hintergrundfarbe der Überschrift mit Transparenz */
+    padding: 5px; /* Abstand um die Überschrift */
+}
+
+.hero p {
+    line-height: 1.8; /* Ändere den Zeilenabstand nach Bedarf */
+    margin-bottom: 20px; /* Optional: Abstand zwischen den Absätzen */
+}
+
+.hero h2 {
+    line-height: 1.0; /* Ändere den Zeilenabstand nach Bedarf */
+    margin-bottom: 10px; /* Optional: Abstand zwischen den Absätzen */
+}
+
+/*
+.gradient-text {
+    font-size: 48px;
+    font-weight: bold;
+    background: url('https://github.com/LukasKnt/Kunstvoll-studio/blob/main/Ueberschrifthintergrund.jpg') repeat;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+*/
 nav {
     display: flex;
     justify-content: center;
@@ -31,11 +66,20 @@ nav a {
     padding: 15px 20px;
     text-decoration: none;
     font-size: 1.2em;
-    transition: background 0.3s;
+    transition: background 1.0s;
 }
 
 nav a:hover {
     background-color: #1e3c72;
+}
+
+.about p {
+    line-height: 1.8; /* Ändere den Zeilenabstand nach Bedarf */
+    margin-bottom: 20px; /* Optional: Abstand zwischen den Absätzen */
+}
+
+.container {
+    padding: 40px 20px;
 }
 
 .hero {
@@ -47,6 +91,31 @@ nav a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
+/*
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+*/
 
 .slider {
     position: relative;
@@ -68,9 +137,10 @@ nav a:hover {
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ensures the image covers the whole area without distorting */
 }
 
+/* CSS für das modale Popup */
 .modal {
     display: none;
     position: fixed;
@@ -81,7 +151,7 @@ nav a:hover {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.9); /* Transparente Hintergrundfarbe */
 }
 
 .modal-content {
@@ -89,17 +159,17 @@ nav a:hover {
     display: block;
     width: 80%;
     max-width: 700px;
-    background-color: white;
+    background-color: white; /* Weißer Hintergrund für das Bild */
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Schatten für das Popup */
 }
 
 .close {
     position: absolute;
     top: 10px;
     right: 25px;
-    color: rgba(121, 121, 121, 0.674);
+    color: rgba(121, 121, 121, 0.674); /* Farbe für das Schließen-Symbol */
     font-size: 35px;
     font-weight: bold;
     transition: 0.3s;
@@ -117,11 +187,16 @@ nav a:hover {
     height: auto;
 }
 
+
+
 .gallery {
-    background: #fff;
-    padding: 30px;
+    background: white;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(101, 101, 101, 0.589);
+}
+
+.gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
@@ -129,32 +204,45 @@ nav a:hover {
 
 .gallery-item {
     position: relative;
-    overflow: hidden;
+}
+
+.gallery img {
+    width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.529);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.gallery-item img {
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(73, 73, 73, 0.404);
+}
+/*
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(243, 2, 2, 0.7);
+    color: white;
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 0;
+    transition: .5s ease;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
 }
 
-.gallery-item img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+.gallery-item:hover .overlay {
+    height: 100%;
+    opacity: 0.9;
 }
-
-.about p {
-    line-height: 1.8;
-    margin-bottom: 20px;
+*/
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
 }
-
-.container {
-    padding: 40px 20px;
-}
-
+/*
 .contact {
     background-color: white;
     padding: 20px;
@@ -197,6 +285,9 @@ nav a:hover {
 .contact-form button:hover {
     background-color: #2a5298;
 }
+*/
+
+
 
 footer {
     background-color: #52982a;
