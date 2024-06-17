@@ -5,123 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kunstvoll Studio</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Styles für das Modal-Popup */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            padding-top: 50px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.9); /* Transparente Hintergrundfarbe */
-        }
-
-        .modal-content {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-            background-color: white; /* Weißer Hintergrund für das Bild */
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Schatten für das Popup */
-        }
-
-        .close {
-            position: absolute;
-            top: 10px;
-            right: 25px;
-            color: rgba(255, 255, 255, 0.8); /* Farbe für das Schließen-Symbol */
-            font-size: 35px;
-            font-weight: bold;
-            transition: 0.3s;
-            z-index: 2;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: #fff;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .modal img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Willkommen bei Kunstvoll Studio</h1>
-    </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Über Uns</a>
-        <a href="#">Galerie</a>
-        <a href="#">Kontakt</a>
-    </nav>
+<header>
+    <h1>Kunstvoll Studio</h1>
+    <h_name>Art created @home by Ynou</h_name>
+</header>
 
-    <div class="container">
-        <section class="hero">
-            <h2>Unsere Kunstwerke</h2>
-            <p>Entdecke die Schönheit und Kreativität in unseren Werken.</p>
-        </section>
+<nav>
+    <a href="#home">Home</a>
+    <a href="about.html">About</a>
+    <a href="#gallery">Gallery</a>
+</nav>
 
-        <div class="gallery">
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://raw.githubusercontent.com/LukasKnt/Kunstvoll-studio/main/Bild7.jpg" alt="Bild 1" onclick="showImage('https://raw.githubusercontent.com/LukasKnt/Kunstvoll-studio/main/Bild1.jpg')">
-                    <div class="overlay"></div>
-                    <div class="text">Abstrakte Malerei</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://raw.githubusercontent.com/LukasKnt/Kunstvoll-studio/main/Bild8.jpg" alt="Bild 2" onclick="showImage('https://raw.githubusercontent.com/LukasKnt/Kunstvoll-studio/main/Bild2.jpg')">
-                    <div class="overlay"></div>
-                    <div class="text">Moderne Skulptur</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://raw.githubusercontent.com/LukasKnt/Kunstvoll-studio/main/Bild9.jpg" alt="Bild 3" onclick="showImage('https://raw.githubusercontent.com/LukasKnt/Kunstvoll-studio/main/Bild3.jpg')">
-                    <div class="overlay"></div>
-                    <div class="text">Digitale Kunst</div>
-                </div>
-                <div class="gallery-item">
-                    <img src="https://raw.githubusercontent.com/LukasKnt/Kunstvoll-studio/main/Bild4.JPG" alt="Bild 4" onclick="showImage('https://raw.githubusercontent.com/LukasKnt/Kunstvoll-studio/main/Bild4.jpg')">
-                    <div class="overlay"></div>
-                    <div class="text">Künstlerische Fotografie</div>
-                </div>
+<div class="container" id="home">
+    <section class="hero">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="hero1.jpg" alt="Banner 1"></div>
+                <div class="slide"><img src="hero2.jpg" alt="Banner 2"></div>
+                <div class="slide"><img src="hero3.jpg" alt="Banner 3"></div>
             </div>
         </div>
-    </div>
+        <h2>Discover the Art of Creativity</h2>
+        <p>Entdecken Sie meine Sammlung von Kunstwerken, die Realismus mit abstrakten Elementen vereinen.</p>
+        <p>&#128231; Kontakt: ynou.kunstvoll@gmail.com</p>
+    </section>
+</div>
 
-    <!-- Modal-Popup -->
-    <div id="myModal" class="modal" onclick="closeModal()">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-    </div>
+<div class="container" id="gallery">
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="bild4.JPG" alt="Bild 1" data-number="1" data-name="Bild 1">
+                <div class="overlay">
+                    <div class="text">Bildnummer: 1<br>Name: Bild 1</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="IMG_0937.jpg" alt="Bild 2" data-number="2" data-name="Bild 2">
+                <div class="overlay">
+                    <div class="text">Bildnummer: 2<br>Name: Bild 2</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="IMG_0941.jpg" alt="Bild 3" data-number="3" data-name="Bild 3">
+                <div class="overlay">
+                    <div class="text">Bildnummer: 3<br>Name: Bild 3</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="IMG_0942.jpg" alt="Bild 4" data-number="4" data-name="Bild 4">
+                <div class="overlay">
+                    <div class="text">Bildnummer: 4<br>Name: Bild 4</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="IMG_0944.jpg" alt="Bild 5" data-number="5" data-name="Bild 5">
+                <div class="overlay">
+                    <div class="text">Bildnummer: 5<br>Name: Bild 5</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="IMG_0947.jpg" alt="Bild 6" data-number="6" data-name="Bild 6">
+                <div class="overlay">
+                    <div class="text">Bildnummer: 6<br>Name: Bild 6</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="IMG_0939.jpg" alt="Bild 7" data-number="7" data-name="Bild 7">
+                <div class="overlay">
+                    <div class="text">Bildnummer: 7<br>Name: Bild 7</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="IMG_0963.jpg" alt="Bild 8" data-number="8" data-name="Bild 8">
+                <div class="overlay">
+                    <div class="text">Bildnummer: 8<br>Name: Bild 8</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="IMG_0964.jpg" alt="Bild 9" data-number="9" data-name="Bild 9">
+                <div class="overlay">
+                    <div class="text">Bildnummer: 9<br>Name: Bild 9</div>
+                </div>
+            </div>
+            <!-- Weitere Bilder können hier hinzugefügt werden -->
+        </div>
+    </section>
+</div>
 
-    <footer>
-        <p>&copy; 2024 Kunstvoll Studio. Alle Rechte vorbehalten.</p>
-    </footer>
+<!-- Footer section can be added here -->
 
-    <script>
-        // JavaScript-Funktionen für das Modal-Popup
-        function showImage(imageSrc) {
-            var modal = document.getElementById('myModal');
-            var modalImg = document.getElementById('img01');
-            modal.style.display = "block";
-            modalImg.src = imageSrc;
-        }
-
-        function closeModal() {
-            var modal = document.getElementById('myModal');
-            modal.style.display = "none";
-        }
-    </script>
 </body>
 </html>
