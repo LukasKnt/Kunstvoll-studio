@@ -127,7 +127,7 @@ nav a:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(73, 73, 73, 0.404);
 }
-
+/*
 .overlay {
     position: absolute;
     top: 0;
@@ -147,7 +147,7 @@ nav a:hover {
 .gallery-item:hover .overlay {
     opacity: 1;
 }
-
+*/
 .text {
     text-align: center;
     padding: 10px;
