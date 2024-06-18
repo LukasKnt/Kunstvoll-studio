@@ -251,7 +251,7 @@ nav a:hover {
 }
 
 .gallery-item:hover .overlay .text {
-    opacity: 1;
+    opacity: 0;
 }
 
 /*
