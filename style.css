@@ -226,6 +226,34 @@ nav a:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(73, 73, 73, 0.404);
 }
+.gallery-item .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Hintergrundfarbe der Overlay-Box */
+    color: white;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-item:hover .overlay {
+    height: 100%;
+}
+
+.gallery-item .overlay .text {
+    opacity: 0;
+    transition: opacity .5s ease;
+}
+
+.gallery-item:hover .overlay .text {
+    opacity: 1;
+}
+
 /*
 .overlay {
     position: absolute;
